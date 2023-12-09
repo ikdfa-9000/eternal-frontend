@@ -1,0 +1,200 @@
+@keyframes glitch {
+    0% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 100%;
+      }
+    20% {
+        opacity: 0%;
+      }
+    25% {
+        opacity: 80%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    45% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 60%;
+    }
+    55% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 40%;
+    }
+    100% {
+        height: 0%;
+    }
+    
+}
+
+
+@keyframes breathe {
+    0% {
+        height: 40%;
+    }
+    50% {
+        height: 40.25%;
+      }
+    100% {
+        height: 40%;
+    }
+    
+}
+
+@keyframes arm-left-breathe {
+    0% {
+        transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-100%) rotate(-2deg);
+      }
+    100% {
+        transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    }
+}
+
+@keyframes arm-right-breathe {
+    0% {
+        transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-100%) rotate(2deg);
+      }
+    100% {
+        transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url("./images/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#doomguy-div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.doomguy-body {
+    margin-top: 60px;
+    position: absolute;
+    height: 40%;
+    top: 65%;
+    left:50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+#doomguy-body {
+    animation: breathe 5s ease-in-out infinite;
+    z-index: 3;
+}
+
+#doomguy-arm-left {
+    animation: arm-left-breathe 5s ease-in-out infinite;
+    z-index: 4;
+}
+
+#doomguy-arm-right {
+    animation: arm-right-breathe 5s ease-in-out infinite;
+    z-index: 2;
+}
+
+#doomguy-cannon {
+    z-index: 2;
+}
+
+
+
+#menu-id {
+    position: absolute;
+}
+
+#menu-minor {
+    margin-bottom: 40px;
+    left: 5%;
+    position: fixed;
+    bottom: 0;
+}
+
+.logo-img {
+    position: absolute;
+    width: 200px;
+    top: 20%;
+    left: 12%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+#glitch {
+    animation: glitch 3s linear infinite;
+}
+
+.eternal-button {
+    font-family: Eternal UI;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    width: 230px;
+    border: none;
+    text-align: left;
+    padding-left: 35px;
+    padding-top: 5px;
+    height: 40px;
+    background: url("./images/button.png");
+    background-size: 230px auto;
+}
+
+.eternal-button-minor {
+    font-family: Eternal UI;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    width: 130px;
+    border: none;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 5px;
+    height: 40px;
+    background: url("./images/button_small.png");
+    background-size: 130px auto;
+}
+
+.eternal-button:hover {
+    background: url("./images/button_yellow.png");
+    background-size: 230px auto;
+}
+
+#menu {
+    list-style-type: none;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+#settings-img {
+
+}

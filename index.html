@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
+        <title>DOOM Eternal Main Menu</title>
+    </head>
+    <body>
+        <audio src="/audio/theme.mp3" autoplay></audio>
+        <div id="doomguy-div">
+            <img src="./images/doomguy.png" class="doomguy-body" id="doomguy-body" />
+            <img src="./images/doomguy_arm_left.png" class="doomguy-body" id="doomguy-arm-left" />
+            <img src="./images/doomguy_arm_right.png" class="doomguy-body" id="doomguy-arm-right" />
+            <img src="./images/doomguy_shoulder-cannon.png" class="doomguy-body" id="doomguy-shoulder-cannon"/>
+        </div>
+        <div id="menu-div">
+            <img src="./images/logo.png" class="logo-img" />
+            <img src="./images/logo_lag.png" class="logo-img" id="glitch"/>
+            <ul id="menu">
+                <li>
+                    <input type="button" class="eternal-button" value="CAMPAIGN"></input>
+                </li>
+                <li>
+                    <input style="margin-left: 20px;" type="button" class="eternal-button" value="BATTLEMODE"></input>
+                </li>
+                <br><br><br><br><br>
+                <li>
+                    <input type="button" class="eternal-button" value="EVENTS"></input>
+                </li>
+                <li>
+                    <input style="margin-left: 20px;" type="button" class="eternal-button" value="CUSTOMIZE"></input>
+                </li>
+                <li>
+                    <input style="margin-left: 40px;" type="button" class="eternal-button" value="EXTRAS"></input>
+                </li>
+            </ul>
+            <div id="menu-minor">
+                <input type="button" class="eternal-button-minor" value="[ESC] EXIT"></input> 
+                <input type="button" class="eternal-button-minor" value="[K]">
+                <img src="./images/settings.png" id="settings-img" />
+                </input> 
+            </div>
+        </div>
+    </body>
+</html>
